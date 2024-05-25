@@ -24,4 +24,10 @@ public class Sale {
             }
         }
     }
+
+    public void causeIndexError(ArrayList<Product> products) throws IndexOutOfBoundsException {
+        for(int i = 0; i <= products.size(); i++) {
+            System.out.println(products.get(i).getPrice());
+        }
+    }
 }

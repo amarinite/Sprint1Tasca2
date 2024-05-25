@@ -17,5 +17,15 @@ public class Main {
         } catch (Exception err) {
             System.out.println(err.getMessage());
         }
+
+        products.add(product1);
+        products.add(product2);
+        products.add(product3);
+
+        try {
+            sale1.causeIndexError(products);
+        } catch (IndexOutOfBoundsException err) {
+            System.out.println(err.getMessage());
+        }
     }
 }
